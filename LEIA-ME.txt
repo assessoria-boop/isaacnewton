@@ -26,7 +26,7 @@ PRINTS DAS AVALIACOES DO GOOGLE (carrossel de depoimentos)
 
 FALTA CONFIGURAR
   - Microsoft Clarity: no <head> do index.html, substituir
-    COLE_AQUI_O_ID_DO_CLARITY pelo ID do projeto no Clarity.
+    ybhrjrb6gs (ja configurado)
   - Google Tag Manager ja esta instalado: GTM-PKCVX3VM
 
 CONTATO CONFIGURADO
