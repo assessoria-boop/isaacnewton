@@ -1,0 +1,34 @@
+ISAAC NEWTON VETERINARIO 24H - LANDING PAGE
+===========================================
+
+Coloque os arquivos abaixo NESTA MESMA PASTA, todos em .webp:
+
+LOGO
+  logo.webp ............... logo do cliente (quadrada, fundo transparente ou branco)
+                            usada no cabecalho, no hero e como favicon da pagina
+
+FOTOS DA CLINICA (hero, intercalam com fade a cada 5 segundos)
+  clinica-1.webp .......... desktop (recomendado 1600x900)
+  clinica-2.webp .......... desktop
+  clinica-3.webp .......... desktop
+  clinica-1-mobile.webp ... mobile (recomendado 900x900, enquadramento mais fechado)
+  clinica-2-mobile.webp ... mobile
+  clinica-3-mobile.webp ... mobile
+
+  Obs.: as fotos usam background-size: cover, entao a proporcao real e mantida,
+  nunca esticam. Se tiver menos de 3 fotos, e so apagar os slides extras
+  (div class="hero-foto-slide foto-2" / foto-3) no HTML.
+
+PRINTS DAS AVALIACOES DO GOOGLE (carrossel de depoimentos)
+  1.webp a 6.webp (6 prints ja adicionados)
+
+  Recomendado: prints em pe (ex.: 800x1000), todos com largura parecida.
+
+FALTA CONFIGURAR
+  - Microsoft Clarity: no <head> do index.html, substituir
+    COLE_AQUI_O_ID_DO_CLARITY pelo ID do projeto no Clarity.
+  - Google Tag Manager ja esta instalado: GTM-PKCVX3VM
+
+CONTATO CONFIGURADO
+  WhatsApp: +55 11 2941-2376 (numero nao aparece na pagina, so nos botoes)
+  Mensagem: "Ola encontrei voces pelo Google, gostaria de atendimento."
