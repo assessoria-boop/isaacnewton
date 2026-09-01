@@ -24,10 +24,9 @@ PRINTS DAS AVALIACOES DO GOOGLE (carrossel de depoimentos)
 
   Recomendado: prints em pe (ex.: 800x1000), todos com largura parecida.
 
-FALTA CONFIGURAR
-  - Microsoft Clarity: no <head> do index.html, substituir
-    ybhrjrb6gs (ja configurado)
-  - Google Tag Manager ja esta instalado: GTM-PKCVX3VM
+RASTREAMENTO INSTALADO
+  - Microsoft Clarity: ybhrjrb6gs
+  - Google Tag Manager: GTM-PKCVX3VM
 
 CONTATO CONFIGURADO
   WhatsApp: +55 11 2941-2376 (numero nao aparece na pagina, so nos botoes)
