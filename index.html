@@ -201,7 +201,7 @@
       position: absolute;
       inset: 0;
       background-size: cover;
-      background-position: center;
+      background-position: center top;
       background-repeat: no-repeat;
       opacity: 0;
       transition: opacity 1.2s ease-in-out;
@@ -264,7 +264,7 @@
     }
 
     .hero h1 .h1-destaque { color: var(--vermelho); }
-    .hero h1 .h1-azul { color: var(--marca); }
+    .hero h1 .h1-cor { color: var(--marca); }
     .hero h1 .h1-linha2 { white-space: nowrap; }
 
     .br-mobile { display: none; }
@@ -763,6 +763,42 @@
     .wpp-float svg { width: 28px; height: 28px; fill: white; }
 
     /* RESPONSIVO */
+    /* Desktop: texto a esquerda, foto a direita (medidas do CSS de producao da vetopet.com.br) */
+    @media (min-width: 901px) {
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+        align-items: center;
+        gap: clamp(28px, 4vw, 64px);
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: clamp(20px, 3vw, 36px) 48px clamp(56px, 7vw, 104px);
+      }
+      .hero-content {
+        order: 1;
+        flex: none;
+        max-width: none;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+      }
+      .hero-foto {
+        order: 2;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        height: clamp(340px, 44vw, 480px);
+        min-height: 0;
+        max-height: none;
+      }
+      /* logo e nome ja aparecem no cabecalho */
+      .hero-logo, .hero-small { display: none; }
+      .hero h1 { max-width: 18ch; }
+      .hero-h2, .hero-sub { margin-left: 0; margin-right: 0; }
+      .hero-btns { align-items: flex-start; }
+      .hero-resposta { text-align: center; max-width: 420px; }
+    }
+
     @media (max-width: 900px) {
       .br-mobile { display: inline; }
       .br-desktop { display: none; }
@@ -846,7 +882,8 @@
 
     /* Mesmo ponto de quebra que a referencia usa para o hero */
     @media (max-width: 560px) {
-      .hero h1 { font-size: clamp(2.1rem, 9.4vw, 2.55rem); line-height: 1; }
+      .hero h1 { font-size: min(8.4vw, 2.55rem); line-height: 1; }
+      .hero h1 .h1-linha2 { white-space: nowrap; }
       .hero-h2 { font-size: 1.125rem; }
       .hero-sub { font-size: 1.0625rem; line-height: 1.6; }
     }
@@ -900,7 +937,7 @@
       <img src="logo.webp" alt="Isaac Newton Veterinário 24h" width="92" height="92" decoding="async" loading="eager" />
     </div>
     <p class="hero-small">Isaac Newton</p>
-    <h1><span class="h1-azul">Hospital Veterinário</span><br /><span class="h1-linha2"><span class="h1-destaque">24 Horas</span> no Tatuapé</span></h1>
+    <h1><span class="h1-cor">Hospital Veterinário</span><br /><span class="h1-linha2"><span class="h1-destaque">24 Horas</span> no Tatuapé</span></h1>
     <h2 class="hero-h2">Isaac Newton Clínica Veterinária 24h - veterinário no Tatuapé, para cães e gatos</h2>
     <h3 class="hero-sub">Cuidar com carinho é mais que missão. É paixão.</h3>
     <div class="hero-btns">
